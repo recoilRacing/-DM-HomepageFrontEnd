@@ -1,0 +1,38 @@
+.PrivacyWrapper {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+
+    color: black;
+    font-family: var(--body-font);
+}
+
+.PrivacyContent {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 30px 0px;
+    padding: 20px;
+}
+
+.PrivacyContent * {
+    font-weight: lighter;
+}
+
+.PrivacyContent h1 {
+    font-size: 35px;
+}
+
+.PrivacyContent h2 {
+    font-size: 20px;
+}
+
+
+.PrivacyContent h3 {
+    font-size: 15px;
+}
+
+.PrivacyContent p, .PrivacyContent li {
+    font-size: 12px;
+}

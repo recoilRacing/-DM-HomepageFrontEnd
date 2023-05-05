@@ -1,0 +1,92 @@
+.logos {
+    background: white;
+    
+    height: fit-content !important;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    place-items: center;
+
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.TeamHeader {
+    text-align: center;
+}
+
+.logos img {
+    height: 100px;
+    aspect-ratio: auto;
+    margin: 20px;
+
+    user-select: none;
+    transition: all .2s;
+}
+
+.logos img:hover {
+    transform: scale(1.05);
+}
+
+
+@media all and (max-width: 1120px) {
+    .logos {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media all and (max-width: 724px) {
+    .logos {
+        grid-template-columns: auto auto;
+    }
+
+    .logos img {
+        height: 60px;
+    }
+
+}
+
+@media all and (max-width: 530px) {
+    .TeamHeader {
+        font-size: 2em;
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .logos {
+        justify-content: center;
+        place-items: center;
+        flex-direction: column;
+    }
+
+    .logos img {
+        height: 70px;
+    }
+
+}
+
+
+@media all and (max-width: 480px) {
+    .logos {
+        grid-template-columns: auto ;
+        /* max-height: 400px; */
+        overflow-y: scroll;
+    }
+
+    .logos img {
+        height: 60px;
+    }
+
+}
+
+
+@media all and (max-width: 380px) {
+    .TeamHeader {
+        font-size: 1.5em;
+    }
+
+}

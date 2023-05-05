@@ -1,0 +1,52 @@
+.ContactWrapper {
+    position: relative;
+    flex-direction: column;
+}
+
+.ContactHeaderWrapper {
+    width: 100%;
+}
+
+.ContactHeader {
+    user-select: none;
+    font-size: 40px;
+    color: white;
+    font-family: speed;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+
+    line-height: 60px;
+
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.ContactContent {
+    
+    background-color: white;
+
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 100px;
+
+    animation: rotate 1s infinite;
+}
+
+.ContactContent h1 {
+    font-size: 30px;
+    font-family: 'Golos Text', sans-serif;
+    margin-bottom: 20px;
+}
+
+.ContactContent p {
+    font-family: 'Golos Text', sans-serif;
+    padding: 5px 5px 5px 0px;
+}
+
+@media all and (max-width: 480px) {
+    .ContactHeader {
+        font-size: 1.8em;
+    }
+}

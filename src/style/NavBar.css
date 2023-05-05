@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap');
+
+.NavBar  {
+    top: 0px;
+    left: 0px;
+
+    height: 80px;
+    width: 100%;
+    
+    z-index: 2;
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .5);
+    /* !TODO: Besprechen, ob blurry background oder nich */
+}
+
+.NavBar div {
+    padding: 0 20px 0 20px;
+}
+
+.NavBarLeft {
+    height: 100%;
+    margin-left: 20px;
+
+    display: flex;
+    place-items: center;
+}
+
+.NavBarLogo {
+    user-select: none;
+    margin-top: 5px;
+    height: 70%;
+    aspect-ratio: auto;
+    transition: .5s all;
+    filter: drop-shadow(0px 0px 15px #0da958)
+}
+
+.NavBarLogo:hover {
+    filter: drop-shadow(0px 0px 50px #2fff00);
+    transform: scale(1.05);
+}
+
+.NavBarRight {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    place-items: center;
+}
+
+.NavBarDropdown {
+    
+    position: absolute;
+    height: 65vh;
+    width: 100%;
+    top: 80px;
+    bottom: -60vh;
+    
+    background-color: black;
+    backdrop-filter: blur(10px);
+    
+}
+
+.noPadding {
+    padding: 0px !important;
+}
+
+.NavBarContent {
+    user-select: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.NavBarContent.vertical {
+    height: 100%;
+
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.NavBarItem {
+    height: 40px;
+    padding: 0 20px 0 20px;
+    margin-right: 1em;
+    letter-spacing: 2px;
+
+    /* background-color: #097b41; */
+    background-color: transparent;
+    border: 2px #097b41;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+    transition: all .2s;
+    cursor: pointer;
+
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 700;
+
+}
+
+.NavBarItem:hover {
+    filter: drop-shadow(0px 0px 15px #0da958);
+    color: #097b41;
+    background-color: white;
+}
+
+@media all and (max-width: 1400px) {
+    .NavBarItem {
+        padding: 0 10px 0 10px;
+    }
+}

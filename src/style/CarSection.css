@@ -1,0 +1,60 @@
+#CarSection {
+    position: relative;
+}
+
+.CarSectionWrapper {
+    min-height: 100%;
+    height: 100%;
+    width: fit-content;
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.CarSectionIntroduction {
+    max-width: 1100px;
+    width: 75%;
+}
+
+.CarVideo {
+    width: 75%;
+    max-width: 1100px;
+    aspect-ratio: 16/9;
+}
+
+.CarHeaderWrapper {
+    width: 100%;
+}
+
+.CarHeader {
+    user-select: none;
+    font-size: 40px;
+    color: white;
+    font-family: speed;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+
+    line-height: 60px;
+
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.CarSectionWrapper.FlexCenter.vertical > h2 {
+    text-align: center;
+}
+
+@media all and (max-width: 460px) {
+    .CarHeader {
+        font-size: 2em;
+        text-align: center;
+    } 
+    .CarSectionWrapper {
+        width: 100%;
+    }
+    .CarVideo {
+        width: 90%;
+        margin-top: 20px;
+    }
+}

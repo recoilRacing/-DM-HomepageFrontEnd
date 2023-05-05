@@ -1,0 +1,26 @@
+#PressSection {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PressYouTube {
+    width: 60%;
+    aspect-ratio: 16/9;
+}
+
+.PressRacingTV1 {
+    width: 60%;
+    aspect-ratio: 16/9;
+    margin-top: 30px;
+}
+
+.PressRacingTV2 {
+    width: 60%;
+    aspect-ratio: 16/9;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
