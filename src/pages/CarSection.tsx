@@ -48,7 +48,7 @@ const CarSection:React.FC<CarSectionProps> = (Props:CarSectionProps):JSX.Element
             {/* </div> */}
 
 
-            <iframe loading="lazy" className="CarVideo" src="https://www.youtube.com/embed/8xdQAl8Dqsw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe loading="lazy" className="CarVideo" src="https://www.youtube.com/embed/8xdQAl8Dqsw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         
             <div className="CarSectionIntroduction">
             <p>Schon zum zweiten mal in Folge erreichten wir bei der F1 in Schools Meisterschaft mit unserem Auto die schnellste Fahrzeit, zunächst bei der Süddeutschen mit dem Recoil Raptor (RR 4.7) und einer Zeit von 1,083s und nun bei der deutschen Meisterschaft mit dem Racing Reptile (RR 6.16)!</p>
