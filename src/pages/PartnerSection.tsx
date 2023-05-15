@@ -40,7 +40,7 @@ const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps)
     //   };
     // }, [ref]);
     
-    return <div ref={ref} id="PressSection">
+    return <div ref={ref} id="PartnerSection">
         {Props.NavBar && <NavBar position="inherit" active={{name: "Presse"}}></NavBar>}
 
         <div className="TeamHeaderWrapper FlexCenter">

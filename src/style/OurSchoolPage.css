@@ -61,18 +61,11 @@
 }
 
 @media all and (max-width: 660px) {
+    .OurSchoolContent {
+        width: 80%;
+    }
     .OurSchoolAbsatz {
         flex-direction: column-reverse;
-    }
-}
-
-@media all and (max-width: 460px) {
-    .OurSchoolHeader {
-        font-size: 2em;
-    }
-    .OurSchoolAbsatz p {
-        font-size: 13px;
-        font-family: 'Golos Text', sans-serif;
     }
     .OurSchoolAbsatz img {
         width: 80%;
@@ -80,4 +73,11 @@
         aspect-ratio: auto;
         margin: 10px;
     }
+}
+
+@media all and (max-width: 460px) {
+    .OurSchoolHeader {
+        font-size: 2em;
+    }
+
 }

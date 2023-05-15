@@ -8,28 +8,6 @@ interface FirstSectionProps {
 
 const FirstSection:React.FC<FirstSectionProps> = (Props:FirstSectionProps):JSX.Element => {
     const ref = useRef<HTMLDivElement>(null);
-
-    // useEffect(() => {
-    //   const observer = new IntersectionObserver(
-    //     ([entry]) => {
-    //       Props.onIntersectingChange(entry.isIntersecting);
-    //     },
-    //     {
-    //       root: null,
-    //       rootMargin: "0px",
-    //       threshold: 0.6,
-    //     }
-    //   );
-
-    //   if (ref.current) {
-    //     observer.observe(ref.current);
-    //   }
-    //   return () => {
-    //     if (ref.current) {
-    //       observer.unobserve(ref.current);
-    //     }
-    //   };
-    // }, [ref]);
     
     return <div ref={ref}>
             <video className='videoTag' playsInline autoPlay muted>

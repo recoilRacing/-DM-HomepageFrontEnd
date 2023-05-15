@@ -7,6 +7,7 @@ import CarSection from "./CarSection";
 import Footer from "../components/Footer";
 import { useState } from "react";
 import PartnerSection from "./PartnerSection";
+import DMFirstSection from "./DMFirstSection";
 
 interface MainPageProps {
     section?: Section;
@@ -32,7 +33,7 @@ const MainPage:React.FC<MainPageProps> = (Props:MainPageProps):JSX.Element => {
         <NavBar active={ Props.section}/>
 
         <section id="FirstSection">
-            <FirstSection onIntersectingChange={setComponent1IsIntersecting}></FirstSection>
+            <DMFirstSection onIntersectingChange={setComponent1IsIntersecting}></DMFirstSection>
         </section>
         
         <section id="TeamSection" className="MTOP">

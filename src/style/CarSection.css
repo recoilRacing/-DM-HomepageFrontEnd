@@ -3,18 +3,18 @@
 }
 
 .CarSectionWrapper {
-    min-height: 100%;
-    height: 100%;
+    background-color: white;
+
+    max-width: 970px;
     width: fit-content;
 
-    background-color: white;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-
 .CarSectionIntroduction {
-    max-width: 1100px;
     width: 75%;
 }
 
@@ -22,6 +22,7 @@
     width: 75%;
     max-width: 1100px;
     aspect-ratio: 16/9;
+    border-radius: 10px;
 }
 
 .CarHeaderWrapper {
@@ -43,6 +44,21 @@
 
 .CarSectionWrapper.FlexCenter.vertical > h2 {
     text-align: center;
+    margin: 15px 0px;
+}
+
+.CarSectionWrapper.FlexCenter.vertical > * {
+    margin: 15px 0px;
+}
+
+.CarSectionWrapper.FlexCenter.vertical > p {
+    width: 100%;
+}
+
+@media all and (max-width: 1090px) {
+    .CarSectionWrapper {
+        width: 71%;
+    }
 }
 
 @media all and (max-width: 460px) {
@@ -51,10 +67,13 @@
         text-align: center;
     } 
     .CarSectionWrapper {
-        width: 100%;
+        width: 85%;
     }
     .CarVideo {
         width: 90%;
         margin-top: 20px;
+    }
+    .CarSectionWrapper .FlexCenter .vertical {
+        padding: 0;
     }
 }

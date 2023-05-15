@@ -37,23 +37,27 @@ const CarSection:React.FC<CarSectionProps> = (Props:CarSectionProps):JSX.Element
         {Props.NavBar && <NavBar position="inherit" active={{name: "Auto"}}></NavBar>}
 
         <div className="CarHeaderWrapper FlexCenter">
-            <h1 className="CarHeader">Der Recoil Raptor</h1>
+            <h1 className="CarHeader">Das Racing Reptile</h1>
         </div>
 
         <div className="CarSectionWrapper FlexCenter vertical">
 
             {/* <div className="CarSectionIntroduction"> */}
                 {/* <h2>Servus</h2> */}
-                <h2>Das ist unser Auto, mit dem wir die Süddeutsche Meisterschaft gewonnen haben!</h2>
+                <h2>Das schnellste "f1inschools" Auto Deutschlands!</h2>
             {/* </div> */}
 
 
-            <iframe loading="lazy" className="CarVideo" src="https://www.youtube-nocookie.com/embed/M_41LTYSV-s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe loading="lazy" className="CarVideo" src="https://www.youtube.com/embed/8xdQAl8Dqsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
             <div className="CarSectionIntroduction">
-            <p>Bei den Rennen hat uns unser Auto nicht enttäuscht. Wir können stolz verkünden, dass wir die Knock-Out Rennen, den Preis für das schnellste Auto und den Konstruktionspreis gewonne haben. Doch so ganz zufällig kam das natürlich nicht: Die Wochen und Monate vor der Meisterschaft haben wir uns sehr intensiv mit der Konstruktion und Optimierung unseres Recoil Raptors beschäftigt.</p>
-            <p>Für die anstehende Deutsche Meisterschaft im Mai in Sindelfingen arbeiten wir fleißig daran, unser Auto noch weiter zu optimieren</p>
+            <p>Schon zum zweiten mal in Folge erreichten wir bei der F1 in Schools Meisterschaft mit unserem Auto die schnellste Fahrzeit, zunächst bei der Süddeutschen mit dem Recoil Raptor (RR 4.7) und einer Zeit von 1,083s und nun bei der deutschen Meisterschaft mit dem Racing Reptile (RR 6.16)!</p>
+            <p>Hier schafften wir es mit einer Zeit von 1,059s das Rennen zu dominieren und uns den Titel des deutschen Meisters zu sichern. Unser größtes Augenmerk lag dabei auf der Aerodynamik doch konnten wir unser Auto auch durch viele Testversuche und genaue Bewegungsanalysen optimieren.</p>
+            
+            <p>Für die Weltmeisterschaft begegnen wir jetzt aber ganz neuen Herausforderungen, mit einem neuen Regelwerk und starker Konkurrenz. Doch aufgrund unserer guten Voraussetzungen und der verlässlichen Unterstützung unserer Sponsoren haben wir uns das Ziel gesetzt das schnellste Auto der Welt bauen und den Sieg der F1 in Schools World Championship nach Deutschland zu holen!</p>
+            
             </div>
+            <iframe loading="lazy" className="CarVideo" src="https://www.youtube-nocookie.com/embed/M_41LTYSV-s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </div> 
     </div>
     

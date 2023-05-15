@@ -52,14 +52,9 @@
 .NavBarDropdown {
     
     position: absolute;
-    height: 65vh;
     width: 100%;
     top: 80px;
-    bottom: -60vh;
-    
-    background-color: black;
-    backdrop-filter: blur(10px);
-    
+      
 }
 
 .noPadding {
@@ -111,8 +106,23 @@
     background-color: white;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1160px) {
+    .NavBar {
+        background-color: black;
+    }
     .NavBarItem {
         padding: 0 10px 0 10px;
+    }
+    .NavBarContent {
+        padding: 0;
+        backdrop-filter: blur(10px);
+        background-color: black;
+        padding-bottom: 10px;
+    }
+    .vertical {
+        margin: 0;
+    }
+    .NavBarItem {
+        margin: 10px 0px;
     }
 }

@@ -8,7 +8,7 @@ import Myonic from "../assets/Sponsors/Myonic.png"
 import Print4You from "../assets/Sponsors/print4you2.jpg"
 import Weineck from "../assets/Sponsors/weineck.jpg"
 
-import { THURL, CHINGURL, FAUURL, FraunhoferURL, MyonicURL, WeineckURL, PumaURL, SiemensURL } from "../Links"
+import { THURL, CHINGURL, FAUURL, FraunhoferURL, MyonicURL, WeineckURL, PumaURL, SiemensURL, Print4YouURL } from "../Links"
 
 type Sponsors = "TH" | "CHING" | "FAU" | "Fraunhofer" | "Puma" | "Siemens" | "Weineck" | "Print4You" | "Myonic";
 
@@ -35,7 +35,7 @@ function getIcon(type:Sponsors):Array<string|undefined> {
         case "Weineck":
             return [Weineck, WeineckURL];
         case "Print4You":
-            return [Print4You, undefined];
+            return [Print4You, Print4YouURL];
         case "Myonic":
             return [Myonic, MyonicURL];
     }

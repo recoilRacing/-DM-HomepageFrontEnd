@@ -12,4 +12,4 @@ export const PumaURL = "https://puma.com/";
 export const SiemensURL = "https://siemens.com/";
 export const WeineckURL = "https://weineck.info/";
 export const MyonicURL = "https://myonic.com/";
-export const Print4YouURL = undefined;
+export const Print4YouURL = "https://www.xxlprint4you.de/";

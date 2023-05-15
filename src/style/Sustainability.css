@@ -62,21 +62,20 @@
 }
 
 @media all and (max-width: 660px) {
+    .SusContent {
+        width: 80%;
+    }
     .SusHeader {
         font-size: 1.5em;
-    }
-    .SusContent p {
-        font-size: 13px;
-        font-family: 'Golos Text', sans-serif;
     }
     .AbsatzMitBild {
         flex-direction: column-reverse;
     }
     .AbsatzMitBild img {
-        width: 80%;
-        height: 80%;
-        margin: 10px;
+        width: 100%;
+        height: 100%;
         aspect-ratio: auto;
+        margin: 10px;
         border-radius: 5px;
     }
 
@@ -86,10 +85,6 @@
 @media all and (max-width: 520px) {
     .SusHeader {
         font-size: 1.2em;
-    }
-    .SusContent p {
-        font-size: 13px;
-        font-family: 'Golos Text', sans-serif;
     }
     .AbsatzMitBild {
         flex-direction: column-reverse;
