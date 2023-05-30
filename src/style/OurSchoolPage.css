@@ -8,23 +8,6 @@
 
 }
 
-.OurSchoolHeaderWrapper {
-    width: 100%;
-}
-
-.OurSchoolHeader {
-    user-select: none;
-    font-size: 40px;
-    color: white;
-    font-family: speed;
-    padding: 30px 0px 30px 0px;
-    text-align: center;
-
-    line-height: 60px;
-
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
 .OurSchoolContent {
     flex-direction: column;
     background-color: white;
@@ -73,11 +56,4 @@
         aspect-ratio: auto;
         margin: 10px;
     }
-}
-
-@media all and (max-width: 460px) {
-    .OurSchoolHeader {
-        font-size: 2em;
-    }
-
 }

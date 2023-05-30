@@ -1,0 +1,10 @@
+
+.SectionSUBHeader {
+    font-size: 4vw;
+}
+
+@media screen and (min-width: 1000px) {
+    .SectionSUBHeader {
+       font-size: 30px;
+    }
+  }

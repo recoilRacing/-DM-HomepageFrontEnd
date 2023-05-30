@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import video from "../assets/CarTurning.mp4";
+import video from "../assets/CarTurning2.mp4";
 import SocialMediaLink from "../components/SocialMediaLink";
+import SectionHeader from "../components/SectionHeader"
 
 interface FirstSectionProps {
     onIntersectingChange?: (isIntersecting: boolean) => void;
@@ -17,9 +18,7 @@ const FirstSection:React.FC<FirstSectionProps> = (Props:FirstSectionProps):JSX.E
             <div className="MainPageContent">
 
                 <div className="MainPageContentLeft">
-                    <h1 className="MainPageTitle">
-                        Recoil Raptor 
-                    </h1>
+                    <SectionHeader header="German Champions" fadeIn/>
                     {/* <div className="MainPageSocials">
                         <SocialMediaLink type="Instagram"></SocialMediaLink>
                         <SocialMediaLink type="YouTube"></SocialMediaLink>

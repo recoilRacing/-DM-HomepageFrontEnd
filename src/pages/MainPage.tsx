@@ -33,7 +33,7 @@ const MainPage:React.FC<MainPageProps> = (Props:MainPageProps):JSX.Element => {
         <NavBar active={ Props.section}/>
 
         <section id="FirstSection">
-            <DMFirstSection onIntersectingChange={setComponent1IsIntersecting}></DMFirstSection>
+            <FirstSection onIntersectingChange={setComponent1IsIntersecting}></FirstSection>
         </section>
         
         <section id="TeamSection" className="MTOP">

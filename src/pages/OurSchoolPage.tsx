@@ -4,6 +4,8 @@ import school from "../assets/MTG_Logo.png"
 import wissenschaftmachtschule from "../assets/WissenschaftMachtSchule.jpg"
 import mintEC from "../assets/MINTEC.jpg"
 import "../style/OurSchoolPage.css";
+import SectionHeader from "../components/SectionHeader"
+import WhiteBackground from "../components/WhiteBackground"
 
 interface OurSchoolPageProps {
     NavBar?: boolean;
@@ -13,12 +15,9 @@ interface OurSchoolPageProps {
 const OurSchoolPage:React.FC<OurSchoolPageProps> = (Props: OurSchoolPageProps):JSX.Element => {
     return <div className="OurSchoolPageWrapper">
         {Props.NavBar && <NavBar position="inherit" active={{name: "Unsere Schule"}}></NavBar>}
+        <SectionHeader header="Unsere Schule"/>
 
-        <div className="OurSchoolHeaderWrapper FlexCenter">
-            <h1 className="OurSchoolHeader">Unsere Schule</h1>
-        </div>
-
-        <div className="OurSchoolContent FlexCenter">
+        <WhiteBackground>
             <div className="OurSchoolAbsatz">
                 <p>Aktuell besuchen exakt 800 Schülerinnen und Schüler das „Städtische Marie-Therese-Gymnasium“, die von 94 Lehrkräften (davon 34 MINT-Lehrkräfte) unterrichtet werden. Die Schule weist seit 2016 ein rein naturwissenschaftliches Profil auf: Dieses Unterrichtsangebot wird von weiteren Angeboten flankiert, die zu einer vertieften Allgemeinbildung gehören: Musik, Theater, Kunst und Zirkus. 
 Als dritte, spätbeginnende Fremdsprache bietet das MTG Chinesisch an, zukunftsorientiert und perfekt mit MINT kombinierbar.</p>
@@ -35,7 +34,7 @@ Als dritte, spätbeginnende Fremdsprache bietet das MTG Chinesisch an, zukunftso
                 <img src={mintEC} style={{backgroundColor: "white"}}></img>
             </div>
 
-        </div>
+        </WhiteBackground>
         
         {Props.Footer && <Footer></Footer>}
 

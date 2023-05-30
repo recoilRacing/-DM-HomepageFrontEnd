@@ -3,27 +3,6 @@
     flex-direction: column;
 }
 
-/* .SusWrapper p {
-    padding: 5px 10px 5px 0px;
-} */
-
-.SusHeaderWrapper {
-    width: 100%;
-}
-
-.SusHeader {
-    user-select: none;
-    font-size: 40px;
-    color: white;
-    font-family: speed;
-    padding: 30px 0px 30px 0px;
-    text-align: center;
-
-    line-height: 60px;
-
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
 
 .SusContent {
     font-family: var(--body-font);
@@ -51,9 +30,6 @@
 }
 
 @media all and (max-width: 836px) {
-    .SusHeader {
-        font-size: 2em;
-    }
     .SusContent p {
         font-size: 15px;
         font-family: 'Golos Text', sans-serif;
@@ -64,9 +40,6 @@
 @media all and (max-width: 660px) {
     .SusContent {
         width: 80%;
-    }
-    .SusHeader {
-        font-size: 1.5em;
     }
     .AbsatzMitBild {
         flex-direction: column-reverse;
@@ -83,9 +56,6 @@
 
 
 @media all and (max-width: 520px) {
-    .SusHeader {
-        font-size: 1.2em;
-    }
     .AbsatzMitBild {
         flex-direction: column-reverse;
     }
@@ -99,6 +69,3 @@
     }
 
 }
-
-
-

@@ -2,78 +2,25 @@
     position: relative;
 }
 
-.CarSectionWrapper {
-    background-color: white;
-
-    max-width: 970px;
-    width: fit-content;
-
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .CarSectionIntroduction {
-    width: 75%;
+    width: 90%;
 }
 
 .CarVideo {
-    width: 75%;
+    width: 90%;
     max-width: 1100px;
     aspect-ratio: 16/9;
     border-radius: 10px;
 }
 
-.CarHeaderWrapper {
-    width: 100%;
-}
-
-.CarHeader {
-    user-select: none;
-    font-size: 40px;
-    color: white;
-    font-family: speed;
-    padding: 30px 0px 30px 0px;
-    text-align: center;
-
-    line-height: 60px;
-
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-.CarSectionWrapper.FlexCenter.vertical > h2 {
-    text-align: center;
-    margin: 15px 0px;
-}
-
-.CarSectionWrapper.FlexCenter.vertical > * {
-    margin: 15px 0px;
-}
-
-.CarSectionWrapper.FlexCenter.vertical > p {
-    width: 100%;
-}
 
 @media all and (max-width: 1090px) {
-    .CarSectionWrapper {
-        width: 71%;
-    }
+
 }
 
 @media all and (max-width: 460px) {
-    .CarHeader {
-        font-size: 2em;
-        text-align: center;
-    } 
-    .CarSectionWrapper {
-        width: 85%;
-    }
     .CarVideo {
         width: 90%;
         margin-top: 20px;
-    }
-    .CarSectionWrapper .FlexCenter .vertical {
-        padding: 0;
     }
 }

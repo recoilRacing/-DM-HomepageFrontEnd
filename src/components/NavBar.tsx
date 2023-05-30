@@ -47,7 +47,7 @@ const NavBar:React.FC<NavBarProps> = (Props:NavBarProps):JSX.Element => {
     return <nav className="FlexCenter NavBar" style={{position: Props.position || "fixed"}}>
 
             <div className="NavBarLeft">
-                <img className="NavBarLogo" src={logo}></img>
+                <img className="NavBarLogo" src={logo} onClick={() => navigate("/home")}></img>
             </div>
             
             {(dimensions.width >= 1160) && <div className="NavBarRight">

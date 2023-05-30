@@ -1,4 +1,5 @@
 import Person from "../components/Person";
+import SectionHeader from "../components/SectionHeader"
 import "../style/TeamSection.css";
 
 import finn from "../assets/Teamkarten/Finn.jpg";
@@ -35,10 +36,7 @@ const TeamSection:React.FC<TeamSectionProps> = (Props:TeamSectionProps):JSX.Elem
     ]
 
     return <div ref={ref} className="TeamSectionWrapper">
-
-        <div className="TeamHeaderWrapper FlexCenter">
-            <h1 className="TeamHeader">Wir sind Recoil Racing</h1>
-        </div>
+        <SectionHeader header="We are Recoil Racing"/>
 
         <div className="PersonsWrapper">
             {shuffleArray(persons).map((i, idx) => {

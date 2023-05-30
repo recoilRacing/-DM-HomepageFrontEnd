@@ -1,0 +1,80 @@
+.SectionHeader {
+    width: 100%;
+}
+
+.Header {
+    user-select: none;
+    cursor: default;
+    font-size: 3vw;
+    
+    color: white;
+    font-weight: bold;
+    font-family: speed;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+
+    line-height: 2em;
+
+
+    transition: all .3s;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation:  glow 1s ease-in-out infinite alternate;
+}
+
+.fade {
+    opacity: 0%;
+
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation:  reveal 1s 2s ease-in-out forwards,
+                glow 1s ease-in-out infinite alternate;
+}
+
+@media screen and (min-width: 1600px) {
+    .Header {
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .Header {
+        font-size: 5vw;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .Header {
+        transition: all .3s;
+        -webkit-animation: low-glow 1s ease-in-out infinite alternate;
+        -moz-animation: low-glow 1s ease-in-out infinite alternate;
+        animation:  low-glow 1s ease-in-out infinite alternate;
+    }
+    .fade {
+        opacity: 0%;
+    
+        -webkit-animation: low-glow 1s ease-in-out infinite alternate;
+        -moz-animation: low-glow 1s ease-in-out infinite alternate;
+        animation:  reveal 1s 2s ease-in-out forwards,
+                    low-glow 1s ease-in-out infinite alternate;
+    }
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #097b41, 0 0 10px #097b41, 0 0 12.5px #097b41, 0 0 15px #097b41, 0 0 17.5px #097b41;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 7.5px #097b41, 0 0 10px #097b41, 0 0 12.5px #097b41, 0 0 15px #097b41, 0 0 17.5px #097b41, 0 0 20px #097b41;
+    }
+}
+
+@-webkit-keyframes low-glow {
+    from {
+        text-shadow: 0 0 1.25px #fff, 0 0 3px #fff, 0 0 3.75px #097b41, 0 0 5px #097b41, 0 0 6.25px #097b41, 0 0 7.5px #097b41, 0 0 8.75px #097b41;
+    }
+    to {
+        text-shadow: 0 0 1.25px #fff, 0 0 3px #fff, 0 0 3.75px #097b41, 0 0 5px #097b41, 0 0 6.25px #097b41, 0 0 7.5px #097b41, 0 0 8.75px #097b41;
+        /* text-shadow: 0 0 2.5px #fff, 0 0 3.75px #097b41, 0 0 5px #097b41, 0 0 6.25px #097b41, 0 0 7.5px #097b41, 0 0 8.75px #097b41, 0 0 10px #097b41; */
+    }
+}

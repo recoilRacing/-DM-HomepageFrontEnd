@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import SponsorLink from "../components/SponsorLink";
+import SectionHeader from "../components/SectionHeader"
+import WhiteBackground from "../components/WhiteBackground"
 
 
 import "../style/PartnerSection.css"
@@ -18,36 +20,12 @@ const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps)
     
     const ref = useRef<HTMLDivElement>(null);
     
-    // useEffect(() => {
-    //   const observer = new IntersectionObserver(
-    //     ([entry]) => {
-    //       Props.onIntersectingChange(entry.isIntersecting);
-    //     },
-    //     {
-    //       root: null,
-    //       rootMargin: "0px",
-    //       threshold: 0.6,
-    //     }
-    //   );
-
-    //   if (ref.current) {
-    //     observer.observe(ref.current);
-    //   }
-    //   return () => {
-    //     if (ref.current) {
-    //       observer.unobserve(ref.current);
-    //     }
-    //   };
-    // }, [ref]);
-    
     return <div ref={ref} id="PartnerSection">
         {Props.NavBar && <NavBar position="inherit" active={{name: "Presse"}}></NavBar>}
 
-        <div className="TeamHeaderWrapper FlexCenter">
-            <h1 className="TeamHeader">Unsere Partner</h1>
-        </div>
+        <SectionHeader header="Unsere Partner"/>
 
-        <div className="logos">
+        <WhiteBackground className="logos">
             <SponsorLink type="Siemens"></SponsorLink>
             <SponsorLink type="CHING"></SponsorLink>
             <SponsorLink type="FAU"></SponsorLink>
@@ -57,7 +35,7 @@ const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps)
             <SponsorLink type="Weineck" height={70}></SponsorLink>
             <SponsorLink type="TH"></SponsorLink>
             <SponsorLink type="Print4You"></SponsorLink>
-        </div>
+        </WhiteBackground>
 
         {Props.Footer && <Footer></Footer>}
 

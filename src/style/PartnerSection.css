@@ -8,23 +8,10 @@
 }
 
 .logos {
-    background: white;
-    
-    height: fit-content !important;
-
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     place-items: center;
-
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.TeamHeader {
-    text-align: center;
 }
 
 .logos img {
@@ -59,27 +46,13 @@
 }
 
 @media all and (max-width: 530px) {
-    .TeamHeader {
-        font-size: 2em;
-        padding: 0;
-        text-align: center;
-        margin-top: 20px;
-    }
-
     .logos {
         justify-content: center;
         place-items: center;
         flex-direction: column;
     }
-    .CarSectionWrapper {
-        padding: 0; 
-        width: 85%;
-    }
-    .CarSectionWrapper > * {
-        width: 90%;
-    }
-}
 
+}
 
 @media all and (max-width: 480px) {
     .logos {

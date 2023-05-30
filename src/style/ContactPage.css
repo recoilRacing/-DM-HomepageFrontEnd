@@ -3,25 +3,7 @@
     flex-direction: column;
 }
 
-.ContactHeaderWrapper {
-    width: 100%;
-}
-
-.ContactHeader {
-    user-select: none;
-    font-size: 40px;
-    color: white;
-    font-family: speed;
-    padding: 30px 0px 30px 0px;
-    text-align: center;
-
-    line-height: 60px;
-
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
 .ContactContent {
-    
     background-color: white;
 
     border-radius: 10px;
@@ -43,10 +25,4 @@
 .ContactContent p {
     font-family: 'Golos Text', sans-serif;
     padding: 5px 5px 5px 0px;
-}
-
-@media all and (max-width: 480px) {
-    .ContactHeader {
-        font-size: 1.8em;
-    }
 }

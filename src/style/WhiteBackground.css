@@ -1,0 +1,26 @@
+.WhiteContainer {
+    background-color: white;
+
+    max-width: 970px;
+    width: 100%;
+
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width: 1090px) {
+    .WhiteContainer {
+        width: 71%;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .WhiteContainer {
+        width: 85%;
+    }
+    .WhiteContainer .FlexCenter .vertical {
+        padding: 0;
+    }
+}

@@ -2,6 +2,8 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import sonnenbrillen from "../assets/Sonnenbrillen.jpg";
 import "../style/Sustainability.css"
+import SectionHeader from "../components/SectionHeader"
+import WhiteBackground from "../components/WhiteBackground"
 
 interface SustainabilityPageProps {
     NavBar?: boolean;
@@ -11,13 +13,9 @@ interface SustainabilityPageProps {
 const SustainabilityPage:React.FC<SustainabilityPageProps> = (Props:SustainabilityPageProps):JSX.Element => {
     return <div className="SusWrapper FlexCenter">
         {Props.NavBar && <NavBar position="inherit" active={{name: "Nachhaltigkeit"}}></NavBar>}
-
+        <SectionHeader header="Nachhaltigkeit"/>
         
-        <div className="SusHeaderWrapper FlexCenter">
-            <h1 className="SusHeader">Nachhaltigkeit</h1>
-        </div>
-        
-        <div className="SusContent">
+        <WhiteBackground >
             <p>Heutzutage ist Nachhaltigkeit ein Synonym für Zukunftsfähigkeit. Schon seit einigen Jahren steht die Formel 1 in heftiger Kritik für ihre Umweltschädlichkeit. Wir möchten nun in unserem "Formel 1 in der Schule" Wettbewerb zeigen, dass man auf verschiedenste Weisen umweltfreundlich handeln kann. Dabei haben wir in jedem Aufgabenbereich unseres multidisziplinären Wettbewerbs den grünen Aspekt beachtet und auf umweltfreundliche Alternativen zurückgegriffen.</p>
             
             <div className="AbsatzMitBild">
@@ -27,7 +25,7 @@ const SustainabilityPage:React.FC<SustainabilityPageProps> = (Props:Sustainabili
             
             <p>In unserer Teambox greifen wir auf abbaubare und nachwachsende Materialien zurück. Dabei wird ein Großteil unserer verwendeten Materialien auch nach dem Wettbewerb Verwendung finden und nicht entsorgt werden. </p>
             <p>Mit dem Wettbewerb möchten wir mit gutem Beispiel vorangehen und zeigen, wie essentiell das Achten auf unsere Umwelt ist. Nur so können wir in der Zukunft beständig sein.  </p>
-        </div>
+        </WhiteBackground>
 
 
         {Props.Footer && <Footer/>}

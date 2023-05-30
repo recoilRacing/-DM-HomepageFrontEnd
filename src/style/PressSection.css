@@ -8,19 +8,15 @@
 }
 
 .PressYouTube {
-    width: 60%;
+    width: 90%;
     aspect-ratio: 16/9;
+    margin: 15px 0px;
+
 }
 
-.PressRacingTV1 {
-    width: 60%;
+.PressRacingTV {
+    width: 90%;
     aspect-ratio: 16/9;
-    margin-top: 30px;
+    margin: 15px 0px;
 }
 
-.PressRacingTV2 {
-    width: 60%;
-    aspect-ratio: 16/9;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
