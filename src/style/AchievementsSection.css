@@ -1,0 +1,7 @@
+#AchievementsSection  {
+    height: 100vh;
+}
+
+#AchievementsSection table > * {
+    color: white;
+}

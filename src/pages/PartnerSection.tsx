@@ -21,9 +21,9 @@ const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps)
     const ref = useRef<HTMLDivElement>(null);
     
     return <div ref={ref} id="PartnerSection">
-        {Props.NavBar && <NavBar position="inherit" active={{name: "Presse"}}></NavBar>}
+        {Props.NavBar && <NavBar position="inherit" active={{name: "Press"}}></NavBar>}
 
-        <SectionHeader header="Unsere Partner"/>
+        <SectionHeader header="Our sponsors"/>
 
         <WhiteBackground className="logos">
             <SponsorLink type="Siemens"></SponsorLink>

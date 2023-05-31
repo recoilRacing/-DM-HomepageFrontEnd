@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import { useState } from "react";
 import PartnerSection from "./PartnerSection";
 import DMFirstSection from "./DMFirstSection";
+import AchievementsSection from "./AchievementsSection";
 
 interface MainPageProps {
     section?: Section;
@@ -43,6 +44,10 @@ const MainPage:React.FC<MainPageProps> = (Props:MainPageProps):JSX.Element => {
         <section id="CarSection" className="MTOP">
             <CarSection onIntersectingChange={setComponent3IsIntersecting}></CarSection>
         </section>
+
+        {/* <section id="AchievementsSection" className="MTOP">
+            <AchievementsSection></AchievementsSection>
+        </section> */}
 
         <section id="PartnerSection" className="MTOP">
             <PartnerSection onIntersectingChange={setComponent4IsIntersecting}></PartnerSection>

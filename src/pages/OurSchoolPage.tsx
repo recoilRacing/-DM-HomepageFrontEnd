@@ -14,7 +14,7 @@ interface OurSchoolPageProps {
 
 const OurSchoolPage:React.FC<OurSchoolPageProps> = (Props: OurSchoolPageProps):JSX.Element => {
     return <div className="OurSchoolPageWrapper">
-        {Props.NavBar && <NavBar position="inherit" active={{name: "Unsere Schule"}}></NavBar>}
+        {Props.NavBar && <NavBar position="inherit" active={{name: "Our school"}}></NavBar>}
         <SectionHeader header="Unsere Schule"/>
 
         <WhiteBackground>

@@ -79,8 +79,8 @@
 
 .NavBarItem {
     height: 40px;
-    padding: 0 20px 0 20px;
-    margin-right: 1em;
+    padding: 0px 20px;
+    margin: 0px 2.5px;
     letter-spacing: 2px;
 
     /* background-color: #097b41; */

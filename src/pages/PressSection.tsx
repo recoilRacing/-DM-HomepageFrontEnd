@@ -18,7 +18,7 @@ const PressSection:React.FC<PressSectionProps> = (Props:PressSectionProps):JSX.E
 
 
     return <div id="PressSection">
-        {Props.NavBar && <NavBar position="inherit" active={{name: "Presse"}}></NavBar>}
+        {Props.NavBar && <NavBar position="inherit" active={{name: "Press"}}></NavBar>}
 
         <SectionHeader header="Presse"/>
         <WhiteBackground className="FlexCenter vertical">

@@ -12,7 +12,7 @@ interface SustainabilityPageProps {
 
 const SustainabilityPage:React.FC<SustainabilityPageProps> = (Props:SustainabilityPageProps):JSX.Element => {
     return <div className="SusWrapper FlexCenter">
-        {Props.NavBar && <NavBar position="inherit" active={{name: "Nachhaltigkeit"}}></NavBar>}
+        {Props.NavBar && <NavBar position="inherit" active={{name: "Sustainability"}}></NavBar>}
         <SectionHeader header="Nachhaltigkeit"/>
         
         <WhiteBackground >

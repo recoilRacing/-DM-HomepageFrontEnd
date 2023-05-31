@@ -12,7 +12,7 @@ interface ContactPageProps {
 
 const ContactPage:React.FC<ContactPageProps> = (Props:ContactPageProps):JSX.Element => {
     return <div className="ContactWrapper FlexCenter">
-        {Props.NavBar && <NavBar position="inherit" active={{name: "Kontakt"}}></NavBar>}
+        {Props.NavBar && <NavBar position="inherit" active={{name: "Contact"}}></NavBar>}
 
         <SectionHeader header="Kontakt"/>
 

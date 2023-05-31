@@ -17,8 +17,9 @@ const App:React.FC = ():JSX.Element => {
         <Route path="/" element={<Navigate to="/home"/>}/>
         <Route path="/home" element={<MainPage section={{name: "Home", referenceElementID: "FirstSection"}}></MainPage>}/>
         <Route path="/team" element={<MainPage section={{name: "Team", referenceElementID: "TeamSection"}}></MainPage>}/>
-        <Route path="/car" element={<MainPage section={{name: "Auto", referenceElementID: "CarSection"}}></MainPage>}/>
-        <Route path="/partner" element={<MainPage section={{name: "Partner", referenceElementID: "PartnerSection"}}></MainPage>}/>
+        <Route path="/car" element={<MainPage section={{name: "Car", referenceElementID: "CarSection"}}></MainPage>}/>
+        <Route path="/achievements" element={<MainPage section={{name: "Achievements", referenceElementID: "AchievementsSection"}}></MainPage>}/>
+        <Route path="/partner" element={<MainPage section={{name: "Sponsors", referenceElementID: "PartnerSection"}}></MainPage>}/>
         <Route path="/press" element={<PressSection NavBar Footer></PressSection>}/>
         <Route path="/school" element={<OurSchoolPage NavBar Footer></OurSchoolPage>}/>
         <Route path="/sustainability" element={<SustainabilityPage NavBar Footer></SustainabilityPage>}/>

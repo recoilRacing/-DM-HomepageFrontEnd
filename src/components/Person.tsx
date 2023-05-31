@@ -23,7 +23,7 @@ const Person:React.FC<PersonProps> = (Props:PersonProps):JSX.Element => {
             {Props.learnMoreURL && <button className="PersonLearnMore button" onClick={() => {
                 window.open(Props.learnMoreURL)
             }}>
-                Vorstellung ansehen
+                Watch Introduction
             </button>} 
         </div>
     </div>
