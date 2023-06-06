@@ -20,7 +20,7 @@ const PressSection:React.FC<PressSectionProps> = (Props:PressSectionProps):JSX.E
     return <div id="PressSection">
         {Props.NavBar && <NavBar position="inherit" active={{name: "Press"}}></NavBar>}
 
-        <SectionHeader header="Presse"/>
+        <SectionHeader header="Press"/>
         <WhiteBackground className="FlexCenter vertical">
             <SectionSUBHeader header="German Championship Recap"/>
             <iframe className="PressYouTube" src="https://www.youtube.com/embed/BYCRcr6ljUI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

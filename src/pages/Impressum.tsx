@@ -5,7 +5,7 @@ const Impressum = () => {
         <NavBar position="inherit"></NavBar>
         <div className="PrivacyWrapper">
             <div className="PrivacyContent">
-                <h1>Impressum</h1>
+            <h1>Impressum</h1>
             <h2>Herausgeber</h2>
             <p>Städt. Marie-Therese-Gymnasium<br/>Schillerstr. 12<br/>91054 Erlangen</p>
             <p>Telefon: 09131/970029-0, Telefax 09131/970029-13</p>

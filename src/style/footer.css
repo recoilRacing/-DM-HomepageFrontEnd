@@ -21,10 +21,6 @@
     flex: 1;
 }
 
-#copyright {
-
-}
-
 #privacy {
     display: flex;
     justify-content: center;
@@ -33,6 +29,8 @@
 
 #privacy * {
     margin: 10px;
+    /* color: #e10600; */
+    color: black;
 }
 
 #socials {

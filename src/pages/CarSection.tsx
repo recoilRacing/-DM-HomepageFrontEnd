@@ -20,12 +20,12 @@ const CarSection:React.FC<CarSectionProps> = (Props:CarSectionProps):JSX.Element
         <SectionHeader header="The Racing Reptile"></SectionHeader>
 
         <WhiteBackground className="FlexCenter vertical">
-            <SectionSUBHeader header={`Das schnellste "f1inschools" Auto Deutschlands!`}/>
+            <SectionSUBHeader header={`The fastest "f1inschools" car in Germany!`}/>
             <iframe loading="lazy" className="CarVideo" src="https://www.youtube.com/embed/8xdQAl8Dqsw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             <div className="CarSectionIntroduction">
-                <p>Schon zum zweiten mal in Folge erreichten wir bei der F1 in Schools Meisterschaft mit unserem Auto die schnellste Fahrzeit, zunächst bei der Süddeutschen mit dem Recoil Raptor (RR 4.7) und einer Zeit von 1,083s und nun bei der deutschen Meisterschaft mit dem Racing Reptile (RR 6.16)!</p>
-                <p>Hier schafften wir es mit einer Zeit von 1,059s das Rennen zu dominieren und uns den Titel des deutschen Meisters zu sichern. Unser größtes Augenmerk lag dabei auf der Aerodynamik doch konnten wir unser Auto auch durch viele Testversuche und genaue Bewegungsanalysen optimieren.</p>
-                <p>Für die Weltmeisterschaft begegnen wir jetzt aber ganz neuen Herausforderungen, mit einem neuen Regelwerk und starker Konkurrenz. Doch aufgrund unserer guten Voraussetzungen und der verlässlichen Unterstützung unserer Sponsoren haben wir uns das Ziel gesetzt das schnellste Auto der Welt bauen und den Sieg der F1 in Schools World Championship nach Deutschland zu holen!</p>
+                <p>Continuing our winning streak, we once again achieved the fastest driving time at the F1 in Schools Championship. At the South German event, our Recoil Raptor (RR 4.7) completed the race in an impressive 1.083s, while at the German Championship, our Racing Reptile (RR 6.16) dominated with a time of 1.059s, securing us the title of German Champion.</p>
+                <p>While we placed significant emphasis on optimizing our car's aerodynamics, we also conducted numerous test trials and conducted precise motion analyses to fine-tune its performance.</p>
+                <p>Now, as we prepare for the World Championship, we anticipate new and formidable challenges with revised regulations and tough competition. However, with our strong foundation and the unwavering support of our sponsors, our goal is to construct the fastest car in the world and secure victory for Germany in the F1 in Schools World Championship.</p>
             </div>
             <iframe loading="lazy" className="CarVideo" src="https://www.youtube-nocookie.com/embed/M_41LTYSV-s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </WhiteBackground>

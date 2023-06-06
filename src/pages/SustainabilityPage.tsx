@@ -13,18 +13,22 @@ interface SustainabilityPageProps {
 const SustainabilityPage:React.FC<SustainabilityPageProps> = (Props:SustainabilityPageProps):JSX.Element => {
     return <div className="SusWrapper FlexCenter">
         {Props.NavBar && <NavBar position="inherit" active={{name: "Sustainability"}}></NavBar>}
-        <SectionHeader header="Nachhaltigkeit"/>
+        <SectionHeader header="Sustainability"/>
         
         <WhiteBackground >
-            <p>Heutzutage ist Nachhaltigkeit ein Synonym für Zukunftsfähigkeit. Schon seit einigen Jahren steht die Formel 1 in heftiger Kritik für ihre Umweltschädlichkeit. Wir möchten nun in unserem "Formel 1 in der Schule" Wettbewerb zeigen, dass man auf verschiedenste Weisen umweltfreundlich handeln kann. Dabei haben wir in jedem Aufgabenbereich unseres multidisziplinären Wettbewerbs den grünen Aspekt beachtet und auf umweltfreundliche Alternativen zurückgegriffen.</p>
+            <p>In today's world, sustainability is synonymous with ensuring long-term viability. Formula 1 has faced significant criticism in recent years for its environmental impact. However, with our participation in the "F1 in Schools" competition, we aim to demonstrate that it is possible to act in an eco-friendly manner in various aspects. Therefore, we have incorporated environmentally conscious practices in each area of our multidisciplinary competition.</p>
             
             <div className="AbsatzMitBild">
-                <p>Für das Chassis, den Körper des Autos, entschieden wir uns bewusst für das 3D-Druckverfahren SDL mit Maisstärke. Bei diesem Prozess werden Schichten von Maisstärke mit einer erwärmten Rolle zusammengeklebt und mit einem Laser, Schicht für Schicht, in Form geschnitten. Die Maisstärke ist abbaubar und kompostierbar. Das fertige Auto wird mit nachhaltigen und ökologischen Lacken beschichtet (von unserem lokalen Partner der chemischen Industrie Erlangen). Unsere Teamkleidung erhalten wir von der Firma Puma, die ihren Hauptsitz in Herzogenaurach hat (und großen Wert auf Nachhaltigkeit legt. So sind 50% des Polyesters recycelt und sie beziehen 100% erneuerbare Energie in ihren Standorten).  Dadurch halten wir die benötigten Lieferwege gering, um den CO2-Fußabdruck klein zu halten. Nicht nur im Bekleidungsaspekt versuchen wir so klimaneutral wie möglich zu handeln, sondern auch bei unseren Ab- und Anreisen. Deshalb haben wir uns entschieden, für jegliche Fahrten die öffentlichen Verkehrsmittel zu verwenden.  </p>
+                <div>
+                    <p>For the car's chassis, we consciously opted for the SDL 3D printing process using corn starch. This method involves bonding layers of corn starch together with a heated roller and shaping them with a laser, layer by layer. The corn starch material is both degradable and compostable. Additionally, we apply sustainable and ecological paints to the car's exterior, provided by our local partner, CHING.</p>
+                    <p>Our team clothing is exclusively sourced from German eco-friendly companies. Puma, one of our sponsors, utilizes 50% recycled polyester in their garments and operates their facilities on 100% renewable energy. By minimizing delivery distances, we reduce our carbon footprint. We extend our commitment to climate neutrality beyond clothing and incorporate it into our transportation practices. As a result we exclusively rely on public transportation for all our trips.</p>
+
+                </div>
                 <img src={sonnenbrillen}></img>
             </div>
             
-            <p>In unserer Teambox greifen wir auf abbaubare und nachwachsende Materialien zurück. Dabei wird ein Großteil unserer verwendeten Materialien auch nach dem Wettbewerb Verwendung finden und nicht entsorgt werden. </p>
-            <p>Mit dem Wettbewerb möchten wir mit gutem Beispiel vorangehen und zeigen, wie essentiell das Achten auf unsere Umwelt ist. Nur so können wir in der Zukunft beständig sein.  </p>
+            <p>Our team box is constructed from degradable and renewable materials, ensuring that nearly 100% of the materials find purpose beyond the competition rather than being discarded.</p>
+            <p>Through this competition, we aim to set a positive example and underscore the importance of environmental stewardship. It is only by doing so that we can ensure a sustainable future.</p>
         </WhiteBackground>
 
 
