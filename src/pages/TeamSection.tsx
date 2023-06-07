@@ -2,12 +2,12 @@ import Person from "../components/Person";
 import SectionHeader from "../components/SectionHeader"
 import "../style/TeamSection.css";
 
-import finn from "../assets/Teamkarten/Finn.jpg";
-import amelie from "../assets/Teamkarten/Amélie.jpg";
-import benno from "../assets/Teamkarten/Benno.jpg";
-import marleen from "../assets/Teamkarten/Marleen.jpg";
-import caroline from "../assets/Teamkarten/Caro.jpg";
-import timon from "../assets/Teamkarten/Timon.jpg";
+import finn from "../assets/Teamkarten/Finn WM.jpg";
+import amelie from "../assets/Teamkarten/Amélie WM.jpg";
+import benno from "../assets/Teamkarten/Benno WM.jpg";
+import marleen from "../assets/Teamkarten/Marleen WM.jpg";
+import caroline from "../assets/Teamkarten/Caro WM.jpg";
+import timon from "../assets/Teamkarten/Timon WM.jpg";
 import { useEffect, useRef, useState } from "react";
 
 interface TeamSectionProps {
