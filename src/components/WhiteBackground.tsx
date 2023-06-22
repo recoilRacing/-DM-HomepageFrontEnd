@@ -2,7 +2,7 @@ import "../style/WhiteBackground.css";
 
 interface WhiteBackgroundProps {
     className?: string;
-    children: JSX.Element[];
+    children: JSX.Element[] | JSX.Element;
 }
 
 const WhiteBackground:React.FC<WhiteBackgroundProps> = (Props):JSX.Element => {

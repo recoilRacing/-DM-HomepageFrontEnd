@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import SponsorLink from "../components/SponsorLink";
+import SponsorLink, {getAllSponsorsAsElements} from "../components/SponsorLink";
 import SectionHeader from "../components/SectionHeader"
 import WhiteBackground from "../components/WhiteBackground"
-
+import * as sponsors from "../SponsorLinks";
 
 import "../style/PartnerSection.css"
 
@@ -16,25 +16,31 @@ interface PartnerSectionProps {
     onIntersectingChange: (isIntersecting: boolean) => void;
 }
 
+export type resizeTableType = {
+    [K in sponsors.Sponsors]?: number
+}
+
 const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps):JSX.Element => {
     
     const ref = useRef<HTMLDivElement>(null);
+
+    const resizeTable:resizeTableType = {
+        CHING: .8,
+        Puma: .8,
+        FNZ: .8
+    }
     
     return <div ref={ref} id="PartnerSection">
         {Props.NavBar && <NavBar position="inherit" active={{name: "Press"}}></NavBar>}
 
         <SectionHeader header="Our sponsors"/>
 
-        <WhiteBackground className="logos">
-            <SponsorLink type="Siemens"></SponsorLink>
-            <SponsorLink type="CHING"></SponsorLink>
-            <SponsorLink type="FAU"></SponsorLink>
-            <SponsorLink type="Fraunhofer"></SponsorLink>
-            <SponsorLink type="Myonic"></SponsorLink>
-            <SponsorLink type="Puma"></SponsorLink>
-            <SponsorLink type="Weineck" height={70}></SponsorLink>
-            <SponsorLink type="TH"></SponsorLink>
-            <SponsorLink type="Print4You"></SponsorLink>
+        <WhiteBackground>
+            <div className="logos">
+                <SponsorLink type="Siemens"></SponsorLink>
+                {getAllSponsorsAsElements(["Siemens"], resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)}
+            </div>
+
         </WhiteBackground>
 
         {Props.Footer && <Footer></Footer>}
