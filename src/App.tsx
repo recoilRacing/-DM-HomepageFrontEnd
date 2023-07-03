@@ -8,6 +8,7 @@ import OurSchoolPage from "./pages/OurSchoolPage";
 import PressSection from "./pages/PressSection";
 import Privacy from "./pages/Privacy";
 import SustainabilityPage from "./pages/SustainabilityPage";
+import BlogPage from "./pages/BlogPage";
 
 
 const App:React.FC = ():JSX.Element => {
@@ -24,6 +25,7 @@ const App:React.FC = ():JSX.Element => {
         <Route path="/school" element={<OurSchoolPage NavBar Footer></OurSchoolPage>}/>
         <Route path="/sustainability" element={<SustainabilityPage NavBar Footer></SustainabilityPage>}/>
         <Route path="/contact" element={<ContactPage NavBar Footer></ContactPage>}/>
+        <Route path="/blog" element={<BlogPage NavBar Footer></BlogPage>}/>
 
         <Route path="/privacy" element={<Privacy></Privacy>}></Route>
         <Route path="/impressum" element={<Impressum></Impressum>}></Route>

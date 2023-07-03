@@ -10,6 +10,10 @@
     margin-bottom: 20px;
 }
 
+.translucent {
+    background-color: transparent !important;
+}
+
 @media all and (max-width: 1090px) {
     .WhiteContainer {
         width: 71%;

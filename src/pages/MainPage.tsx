@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar"
 import "../style/MainPage.css"
-import {Section} from "../customInterfaces";
+import { Section } from "../customInterfaces";
 import FirstSection from "./FirstSection";
 import TeamSection from "./TeamSection";
 import CarSection from "./CarSection";
@@ -31,7 +31,7 @@ const MainPage:React.FC<MainPageProps> = (Props:MainPageProps):JSX.Element => {
     }, 100)
     
     return <div id="MainPage">
-        <NavBar active={ Props.section}/>
+        <NavBar active={Props.section}/>
 
         <section id="FirstSection">
             <FirstSection onIntersectingChange={setComponent1IsIntersecting}></FirstSection>

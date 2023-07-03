@@ -22,6 +22,7 @@ const NavBar:React.FC<NavBarProps> = (Props:NavBarProps):JSX.Element => {
             {name: "Car", subURL: "/car"},
             // {name: "Achievements", subURL: "/achievements"},
             {name: "Sponsors", subURL: "/partner"},
+            {name: "Blog", subURL: "/blog"},
             {name: "Press", subURL: "/press"},
             {name: "Our school", subURL: "/school"},
             {name: "Sustainability", subURL: "/sustainability"},
