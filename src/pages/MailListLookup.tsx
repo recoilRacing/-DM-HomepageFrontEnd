@@ -21,7 +21,7 @@ const MailListLookup:React.FC<MailListLookupProps> = (Props):JSX.Element => {
         {Object.keys(mails).map((i:any) => {
             const time = new Date(mails[i]?.at)
             return <div key={i} style={{display: "flex"}}>
-                <p style={{color: "white", margin: 0, padding: 0, userSelect: "none"}}>{`${time.getDate()}.${time.getMonth()}.${time.getFullYear()} ${time.getHours()}:${time.getMinutes()}`}</p>
+                <p style={{color: "white", margin: 0, padding: 0, userSelect: "none"}}>{`${time.getDate()}.${time.getMonth()+1}.${time.getFullYear()} ${time.getHours()}:${time.getMinutes()}`}</p>
                 <p style={{color: "white", margin: 0, padding: 0, marginLeft: "20px"}} key={i}>{i}</p>
             </div>
         })}
