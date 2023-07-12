@@ -6,7 +6,6 @@ interface MailListLookupProps {
 }
 
 const MailListLookup:React.FC<MailListLookupProps> = (Props):JSX.Element => {
-
     const [mails, setData] = useState({});
 
     useEffect(() => {
@@ -15,7 +14,17 @@ const MailListLookup:React.FC<MailListLookupProps> = (Props):JSX.Element => {
 
     return <div style={{margin: "20px"}}>
         <h1 style={{color: "white", userSelect:"none"}}>MailList</h1>
-        {Object.keys(mails).map(i => <p style={{color: "white", margin: 0, padding: 0}} key={i}>{i}</p>)}
+        {/* <button className="button" style={{marginBottom: "10px"}} onClick={() => {
+             navigator.clipboard.writeText(Object.keys(mails).join("\n"));
+        }}>Copy all</button> */}
+
+        {Object.keys(mails).map(i => {
+            const time = new Date(mails[i].at)
+            return <div key={i} style={{display: "flex"}}>
+                <p style={{color: "white", margin: 0, padding: 0, userSelect: "none"}}>{`${time.getDate()}.${time.getMonth()}.${time.getFullYear()} ${time.getHours()}:${time.getMinutes()}`}</p>
+                <p style={{color: "white", margin: 0, padding: 0, marginLeft: "20px"}} key={i}>{i}</p>
+            </div>
+        })}
     </div>
 }
 
