@@ -12,6 +12,11 @@ import FNZ from "./assets/Sponsors/FNZ.png";
 import Wilhelm_Stemmer_Stiftung from "./assets/Sponsors/Wilhelm-Stemmer-Stiftung.jpg";
 import ChancenDurchBildung from "./assets/Sponsors/ChancenDurchBildung.png";
 
+export type Sponsors = (typeof sponsorsArray)[number];
+export type SponsorObjectType = {
+  [K in Sponsors]: any;
+};
+
 export const sponsorsArray = [
   "Siemens",
   "Tintschl",
@@ -27,11 +32,6 @@ export const sponsorsArray = [
   "FNZ",
   "Weineck",
 ] as const;
-export type Sponsors = (typeof sponsorsArray)[number];
-
-export type SponsorObjectType = {
-  [K in Sponsors]: any;
-};
 
 const Images: SponsorObjectType = {
   TH: TH,

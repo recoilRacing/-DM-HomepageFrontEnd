@@ -9,6 +9,7 @@ import PressSection from "./pages/PressSection";
 import Privacy from "./pages/Privacy";
 import SustainabilityPage from "./pages/SustainabilityPage";
 import BlogPage from "./pages/BlogPage";
+import MailListLookup from "./pages/MailListLookup";
 
 
 const App:React.FC = ():JSX.Element => {
@@ -30,6 +31,7 @@ const App:React.FC = ():JSX.Element => {
         <Route path="/privacy" element={<Privacy></Privacy>}></Route>
         <Route path="/impressum" element={<Impressum></Impressum>}></Route>
 
+        <Route path="/newsletterList" element={<MailListLookup></MailListLookup>}></Route>
         <Route path="*" element={<Navigate to="/home"/>}></Route>
       </Routes>
 

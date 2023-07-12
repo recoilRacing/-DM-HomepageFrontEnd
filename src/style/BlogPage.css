@@ -7,3 +7,40 @@
     padding: 20px;
     border-radius: 10px;
 }
+
+.BlogMehrAnzeigen {
+    color: white;
+    text-decoration: underline;
+}
+
+.emailInput {
+    width: 100%;
+    height: 30px;
+}
+
+.emailCheckboxContainer {
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+}
+
+.emailCheckboxContainer p {
+ margin-left: 20px;
+}
+
+.newsletterCheckbox {
+    height: 15px;
+    width: 15px;
+}
+
+.inactive {
+    background-color: grey !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+.errorMessage {
+    color: red;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
