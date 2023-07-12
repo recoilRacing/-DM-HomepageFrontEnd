@@ -6,7 +6,7 @@ interface MailListLookupProps {
 }
 
 const MailListLookup:React.FC<MailListLookupProps> = (Props):JSX.Element => {
-    const [mails, setData] = useState({});
+    const [mails, setData] = useState<any>({});
 
     useEffect(() => {
         axios.get("https://recoilracingapi.finnkrause.com/mailList").then((res:any) => setData(res.data))
@@ -18,8 +18,8 @@ const MailListLookup:React.FC<MailListLookupProps> = (Props):JSX.Element => {
              navigator.clipboard.writeText(Object.keys(mails).join("\n"));
         }}>Copy all</button> */}
 
-        {Object.keys(mails).map(i => {
-            const time = new Date(mails[i].at)
+        {Object.keys(mails).map((i:any) => {
+            const time = new Date(mails[i]?.at)
             return <div key={i} style={{display: "flex"}}>
                 <p style={{color: "white", margin: 0, padding: 0, userSelect: "none"}}>{`${time.getDate()}.${time.getMonth()}.${time.getFullYear()} ${time.getHours()}:${time.getMinutes()}`}</p>
                 <p style={{color: "white", margin: 0, padding: 0, marginLeft: "20px"}} key={i}>{i}</p>
