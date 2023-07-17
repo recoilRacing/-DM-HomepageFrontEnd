@@ -9,6 +9,7 @@ const Footer:React.FC = (Props):JSX.Element => {
             </div>
             <div id="socials">
                 <SocialMediaLink type="Facebook"></SocialMediaLink>
+                <SocialMediaLink type="LinkedIn"></SocialMediaLink>
                 <SocialMediaLink type="Instagram"></SocialMediaLink>
                 <SocialMediaLink type="Twitter"></SocialMediaLink>
                 <SocialMediaLink type="YouTube"></SocialMediaLink>

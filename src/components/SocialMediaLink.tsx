@@ -2,12 +2,14 @@ import InstaIcon from "../assets/Instagram.png";
 import YouTubeIcon from "../assets/YouTube.png";
 import TwitterIcon from "../assets/Twitter.png";
 import FacebookIcon from "../assets/Facebook.png";
+import LinkedInIcon from "../assets/LinkedIn.png";
 import { YouTubeChannelURL } from "../Links";
 import { InstaURL } from "../Links";
 import { FacebookURL } from "../Links";
 import { TwitterlURL } from "../Links";
+import { LinkedInURL } from "../Links";
 
-type SocialMediaKanäle = "YouTube" | "Facebook" | "Instagram" | "Twitter";
+type SocialMediaKanäle = "YouTube" | "Facebook" | "Instagram" | "Twitter" |"LinkedIn";
 
 interface Props {
     height?: number;
@@ -25,6 +27,8 @@ function getIcon(type:SocialMediaKanäle):Array<string> {
             return [TwitterIcon, TwitterlURL];
         case "Instagram":
             return [InstaIcon, InstaURL];
+        case "LinkedIn":
+            return [LinkedInIcon, LinkedInURL];
     }
 }
 
