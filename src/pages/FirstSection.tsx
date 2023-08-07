@@ -18,7 +18,7 @@ const FirstSection:React.FC<FirstSectionProps> = (Props:FirstSectionProps):JSX.E
             <div className="MainPageContent">
 
                 <div className="MainPageContentLeft">
-                    <SectionHeader header="German Champions" fadeIn/>
+                    <SectionHeader header="RECOIL RACING" fadeIn/>
                     {/* <div className="MainPageSocials">
                         <SocialMediaLink type="Instagram"></SocialMediaLink>
                         <SocialMediaLink type="YouTube"></SocialMediaLink>
