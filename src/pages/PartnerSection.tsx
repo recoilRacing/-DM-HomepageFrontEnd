@@ -28,6 +28,11 @@ const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps)
         CHING: .8,
         Puma: .8,
         FNZ: .8,
+        Elsner_Stiftung: 0.8,
+        Rotary_Club: 0.8,
+        SKZ: .8,
+        F3G: .8,
+        Weineck: .8,
     }
     
     return <div ref={ref} id="PartnerSection">
@@ -42,7 +47,6 @@ const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps)
             </div>
 
         </WhiteBackground>
-
         {Props.Footer && <Footer></Footer>}
 
     </div>
