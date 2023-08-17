@@ -9,7 +9,7 @@ import Print4You from "./assets/Sponsors/print4you2.jpg";
 import Weineck from "./assets/Sponsors/Weineck.png";
 import Tintschl from "./assets/Sponsors/TintschlAG.svg";
 import FNZ from "./assets/Sponsors/FNZ.png";
-import Becker from "./assets/Sponsors/FNZ.png";
+import Becker from "./assets/Sponsors/Becker.jpg";
 import Wilhelm_Stemmer_Stiftung from "./assets/Sponsors/Wilhelm-Stemmer-Stiftung.jpg";
 import ChancenDurchBildung from "./assets/Sponsors/ChancenDurchBildung.png";
 import RotaryClub from "./assets/Sponsors/new/rotary-club.png";
@@ -45,7 +45,7 @@ export const sponsorsArray = [
   "Puma",
   "Print4You",
   "TH",
-  "FNZ",
+  // "FNZ",
   "Weineck",
   "Becker",
   "Elsner_Stiftung",
@@ -74,7 +74,7 @@ const Images: SponsorObjectType = {
   Print4You: Print4You,
   Weineck: Weineck,
   Tintschl: Tintschl,
-  FNZ: FNZ,
+  // FNZ: FNZ,
   Wilhelm_Stemmer_Stiftung: Wilhelm_Stemmer_Stiftung,
   ChancenDurchBildung: ChancenDurchBildung,
   Becker: Becker,
@@ -100,7 +100,7 @@ const URLs: SponsorObjectType = {
   Print4You: "https://www.xxlprint4you.de/",
   Weineck: "https://weineck.info/",
   Tintschl: "https://www.tintschl.de/",
-  FNZ: "https://www.fnz.com/",
+  // FNZ: "https://www.fnz.com/",
   Wilhelm_Stemmer_Stiftung: "https://www.wilhelm-stemmer-stiftung.de/",
   ChancenDurchBildung: "https://www.chancen-durch-bildung.de/",
   Becker: "https://www.becker.com/",
@@ -126,7 +126,7 @@ const SponsorTypes: SponsorTypeType = {
   Print4You: "Silver",
   Weineck: "Queue",
   Tintschl: "Gold",
-  FNZ: "Silver",
+  // FNZ: "Silver",
   Wilhelm_Stemmer_Stiftung: "Value",
   ChancenDurchBildung: "Value",
   Becker: "Gold",
