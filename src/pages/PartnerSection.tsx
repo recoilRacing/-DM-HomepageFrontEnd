@@ -41,7 +41,7 @@ const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps)
         <SectionHeader header="Our sponsors"/>
 
         <WhiteBackground>
-            <h1 style={{color: "gold"}}>Premium Sponsor</h1>
+            <h1 style={{color: "#e10600"}}>Premium Sponsor</h1>
             <div className="logos">
                 <SponsorLink type="Siemens"></SponsorLink>
             </div>
@@ -72,7 +72,7 @@ const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps)
             <h1 style={{color: "silver"}}>Value Sponsors</h1>
             <div className="logos">
                 {getAllSponsorsByCategory("Value", undefined, resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)}
-                {getAllSponsorsByCategory("Queue", undefined, resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)}
+                {/* {getAllSponsorsByCategory("Queue", undefined, resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)} */}
             </div>
         </WhiteBackground>
 
