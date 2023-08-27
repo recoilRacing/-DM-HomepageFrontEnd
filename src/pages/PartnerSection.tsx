@@ -1,12 +1,13 @@
 import { useEffect, useRef } from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import SponsorLink, {getAllSponsorsAsElements} from "../components/SponsorLink";
+import SponsorLink, {getAllSponsorsAsElements, getAllSponsorsByCategory} from "../components/SponsorLink";
 import SectionHeader from "../components/SectionHeader"
 import WhiteBackground from "../components/WhiteBackground"
 import * as sponsors from "../SponsorLinks";
 
 import "../style/PartnerSection.css"
+import SectionSUBHeader from "../components/SectionSUBHeader";
 
 
 interface PartnerSectionProps {
@@ -40,14 +41,42 @@ const PartnerSection:React.FC<PartnerSectionProps> = (Props:PartnerSectionProps)
         <SectionHeader header="Our sponsors"/>
 
         <WhiteBackground>
+            <h1 style={{color: "gold"}}>Premium Sponsor</h1>
             <div className="logos">
                 <SponsorLink type="Siemens"></SponsorLink>
-                {getAllSponsorsAsElements(["Siemens"], resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)}
             </div>
-
         </WhiteBackground>
-        {Props.Footer && <Footer></Footer>}
 
+        <WhiteBackground>
+            <h1 style={{color: "#097b41"}}>Academical Sponsors</h1>
+            <div className="logos">
+                {getAllSponsorsByCategory("Academical", undefined, resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)}
+            </div>
+        </WhiteBackground>
+            
+        <WhiteBackground>
+            <h1 style={{color: "gold"}}>Gold Sponsors</h1>
+            <div className="logos">
+                {getAllSponsorsByCategory("Gold", undefined, resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)}
+            </div>
+        </WhiteBackground>
+
+        <WhiteBackground>
+            <h1 style={{color: "silver"}}>Silver Sponsors</h1>
+            <div className="logos">
+                {getAllSponsorsByCategory("Silver", undefined, resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)}
+            </div>
+        </WhiteBackground>
+
+        <WhiteBackground>
+            <h1 style={{color: "silver"}}>Value Sponsors</h1>
+            <div className="logos">
+                {getAllSponsorsByCategory("Value", undefined, resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)}
+                {getAllSponsorsByCategory("Queue", undefined, resizeTable).map((value) => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value)}
+            </div>
+        </WhiteBackground>
+
+        {Props.Footer && <Footer></Footer>}
     </div>
     
 }

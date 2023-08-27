@@ -25,4 +25,14 @@ export const getAllSponsorsAsElements = (except?: sponsors.Sponsors[], resizeTab
         })
 }
 
+export const getAllSponsorsByCategory = (category: sponsors.SponsorType, except?: sponsors.Sponsors[], resizeTable?: resizeTableType):JSX.Element[] => {
+    return sponsors.sponsorsArray.filter((element: sponsors.Sponsors) => {
+            if (category != (sponsors.SponsorTypes[element]) || except?.includes(element)) return false;
+            else return true;
+        }).map((i:any, idx: number) => {
+            //@ts-expect-error
+            return <SponsorLink type={i} key={idx} scale={(resizeTable != null && Object.keys(resizeTable).includes(i)) ? resizeTable[i] : undefined}></SponsorLink>
+        })
+}
+
 export default SponsorLink;
