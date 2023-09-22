@@ -20,6 +20,11 @@ const CarSection:React.FC<CarSectionProps> = (Props:CarSectionProps):JSX.Element
         <SectionHeader header="The Racing Reptile"></SectionHeader>
 
         <WhiteBackground className="FlexCenter vertical">
+            <SectionSUBHeader header={`Our masterpiece for the World Finals!`}/>
+            <iframe loading="lazy" className="CarVideo"  src="https://www.youtube.com/embed/J-vTb7qopDI?si=3-UL0YeDQqF4jqhE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <div className="CarSectionIntroduction">
+                <p>We're very proud to present our masterpiece! With the so-called 'Recoil Ray,' we were able to win the F1 in Schools World Finals 2023 in Singapore! Thanks to the clever design from Marleen Stollberg, we even made it to the quarter-finals in the knockout races!</p>
+            </div>
             <SectionSUBHeader header={`The fastest "f1inschools" car in Germany!`}/>
             <iframe loading="lazy" className="CarVideo" src="https://www.youtube.com/embed/8xdQAl8Dqsw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             <div className="CarSectionIntroduction">

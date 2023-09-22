@@ -19,7 +19,7 @@ const FirstSection:React.FC<FirstSectionProps> = (Props:FirstSectionProps):JSX.E
                 <div className="DMContentTop"></div>
                 <div className="DMContentBottom FlexCenter">
                     <h1 className="Header DMMainPageTitle">
-                        Wir sind deutscher Meister!
+                        {/* WE ARE WORLD CHAMPIONS */}
                     </h1>
                 </div>
             </div>

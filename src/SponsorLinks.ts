@@ -103,7 +103,7 @@ const URLs: SponsorObjectType = {
   // FNZ: "https://www.fnz.com/",
   Wilhelm_Stemmer_Stiftung: "https://www.wilhelm-stemmer-stiftung.de/",
   ChancenDurchBildung: "https://www.chancen-durch-bildung.de/",
-  Becker: "https://www.becker.com/",
+  Becker: "https://www.becker-metals.com/en.html",
   Elsner_Stiftung: "https://elsner-stiftung.de/",
   Rotary_Club: "https://erlangen.rotary.de/",
   F3G: "https://www.familienservice.fau.de/f%C2%B3g-verbund/",
