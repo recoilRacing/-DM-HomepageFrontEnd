@@ -27,12 +27,12 @@ const TeamSection:React.FC<TeamSectionProps> = (Props:TeamSectionProps):JSX.Elem
     const ref = useRef<HTMLDivElement>(null);
 
     const persons = [
-      {name: "Amélie Niessen", job: "Teammanagerin", url: "https://www.youtube.com/watch?v=VLlXCYZ4vSk", teamcard: amelie},
-      {name: "Benno Wörand", job: "Entwicklung", url: "https://www.youtube.com/watch?v=p6nbVe7hRFE", teamcard: benno},
-      {name: "Timon Schlenk", job: "Fertigung & Teambox", url: "https://www.youtube.com/watch?v=iO70Mj4I9uw", teamcard: timon},
-      {name: "Marleen Stollberg", job: "Konstruktion", url: "https://www.youtube.com/watch?v=wU3YHdawsTM", teamcard: marleen},
-      {name: "Caroline Schalk", job: "Kommunikation und Marketing", url: "https://www.youtube.com/watch?v=kGC0EtCmGD4", teamcard: caroline},
-      {name: "Finn Krause", job: "Social Media & Design", url: "https://www.youtube.com/watch?v=7TJEZFmj6SY", teamcard: finn}
+      {name: "Amélie Niessen", job: "Teammanagerin", url: "https://www.youtube.com/watch?v=8XwirPnx6FU", teamcard: amelie},
+      {name: "Benno Wörand", job: "Entwicklung", url: "https://www.youtube.com/watch?v=wsBpT7bBCX4", teamcard: benno},
+      {name: "Timon Schlenk", job: "Fertigung & Teambox", url: "https://www.youtube.com/watch?v=hlFNWaBeMzA", teamcard: timon},
+      {name: "Marleen Stollberg", job: "Konstruktion", url: "https://www.youtube.com/watch?v=sy3KnsPS8xk", teamcard: marleen},
+      {name: "Caroline Schalk", job: "Kommunikation und Marketing", url: "https://www.youtube.com/watch?v=TxY6JOwWc5I", teamcard: caroline},
+      {name: "Finn Krause", job: "Social Media & Design", url: "https://www.youtube.com/watch?v=hTmcD6w7Mms", teamcard: finn}
     ]
 
     return <div ref={ref} className="TeamSectionWrapper">

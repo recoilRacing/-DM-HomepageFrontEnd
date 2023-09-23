@@ -19,13 +19,13 @@ const Person:React.FC<PersonProps> = (Props:PersonProps):JSX.Element => {
             </div>
         </div>
 
-        <div className="PersonLearnMoreWrapper FlexCenter">
+        {/* <div className="PersonLearnMoreWrapper FlexCenter">
             {Props.learnMoreURL && <button className="PersonLearnMore button" onClick={() => {
                 window.open(Props.learnMoreURL)
             }}>
                 Watch Introduction
             </button>} 
-        </div>
+        </div> */}
     </div>
 }
 
